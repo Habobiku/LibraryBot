@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Telegram.Bot" Version="18.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Responce\" />
+    <None Remove="LibraryClient\" />
+    <None Remove="ExecuteBot\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Telegram.Bot" />
+    <None Remove="Bot\Commands\" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Responce\" />
+    <Folder Include="LibraryClient\" />
+    <Folder Include="ExecuteBot\" />
+    <Folder Include="TGBot\Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
+</Project>
